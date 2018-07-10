@@ -2,7 +2,7 @@
  * @Author: kael 
  * @Date: 2018-02-14 17:35:48 
  * @Last Modified by: kael
- * @Last Modified time: 2018-03-10 22:48:51
+ * @Last Modified time: 2018-07-10 16:50:29
  */
 
 const assert = require('assert');
@@ -65,6 +65,14 @@ describe('正则表达式', () => {
     [
       '.5.5',
       '1.5.5',
+      '',
+      '.',
+      '+',
+      '-',
+      '+.',
+      '-.',
+      '.+',
+      '.-',
     ].forEach((number) => {
       assert.ok(!RegExps.number.test(number));
     });
