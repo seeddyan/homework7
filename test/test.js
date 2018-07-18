@@ -1,6 +1,6 @@
 /*
- * @Author: kael 
- * @Date: 2018-02-14 17:35:48 
+ * @Author: kael
+ * @Date: 2018-02-14 17:35:48
  * @Last Modified by: kael
  * @Last Modified time: 2018-07-10 16:50:29
  */
@@ -73,6 +73,7 @@ describe('正则表达式', () => {
       '-.',
       '.+',
       '.-',
+      '1e9'
     ].forEach((number) => {
       assert.ok(!RegExps.number.test(number));
     });
